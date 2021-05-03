@@ -1,0 +1,121 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    padding-left: 150px;
+    padding-right: 150px;
+    grid-gap: 30px;
+    background: rgb(255, 174, 0);
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 200px 400px;
+    grid-template-areas:
+        'cabecera cabecera cabecera'
+        'ronnie margie laura ';
+}
+.cabecera {
+    grid-area: cabecera;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.ronnie {
+    grid-area: ronnie;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+}
+.Margie {
+    grid-area: margie;
+    background-color: white;
+}
+.Laura {
+    grid-area: laura;
+    background-color: white;
+}
+p {
+    background-color: blueviolet;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px black;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 100px;
+    padding-top: 20px;
+}
+
+.ronnie:hover {
+    animation-duration: 1.5s;
+    animation-name: grow;
+    animation-fill-mode: forwards;
+}
+.Margie:hover {
+    animation-duration: 1.5s;
+    animation-name: grow;
+    animation-fill-mode: forwards;
+}
+.Laura:hover {
+    animation-duration: 1.5s;
+    animation-name: grow;
+    animation-fill-mode: forwards;
+}
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.cabecera {
+    animation-duration: 2s;
+    animation-name: trasp;
+    animation-timing-function: easing;
+}
+
+.ronnie {
+    animation-duration: 4s;
+    animation-name: trasp;
+    animation-timing-function: easing;
+}
+.Margie {
+    animation-duration: 6s;
+    animation-name: trasp;
+    animation-timing-function: easing;
+}
+.Laura {
+    animation-duration: 8s;
+    animation-name: trasp;
+    animation-timing-function: easing;
+}
+@keyframes trasp {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 50;
+    }
+    100% {
+        opacity: 100;
+    }
+}

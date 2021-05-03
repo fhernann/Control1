@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio HTML 3</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<form method="GET" action=".">
+  <fieldset>
+    <legend>Formulario</legend>
+    <fieldset>
+      <legend>Datos de contacto</legend>
+        <label for="name">Nombre</label>
+          <input type="text" autofocus id ="name" required />
+        <label for="email">Correo electrónico</label>
+          <input type="email" id="email" required/>
+
+        <label for="name">URL</label>
+          <input type="url" placeholder="Escribe la URL de tu página web personal" size="29" />
+
+      </fieldset>
+      <fieldset>
+        <legend>Fechas</legend>
+        <label for="date">Fecha</label>
+          <input type="date" name="fecha" id="date"/>
+
+
+        <label for="time">Tiempo</label>
+          <input type="time" name="Tiempo" id="time"/>
+
+
+        <label for="Fechayhora">Fecha y hora</label>
+          <input type="datetime-local" name="Fecha y hora" id="Fechayhora" />
+
+        <label for="month">Mes</label>
+          <input type="month" name="Mes" id="month"/>
+
+
+        <label for="Week">Semana</label>
+          <input type="week" name="Semana" id="Week"/>
+
+      </fieldset>
+      <fieldset>
+        <legend>Otros datos</legend>
+        <label for="number">Número</label>
+          <input type="number" name="Número" min="-10" max="10" id="number"/>
+
+
+        <label for="phone">Teléfono</label>
+        <input name="tel1" type="tel"  value="610511212" readonly id="phone"/>
+
+
+        <label for="search">Término de búsqueda</label>
+          <input type="search" name="Busqueda" id="search" disabled/>
+
+
+        <label for="colour">Color favorito</label>
+          <input type="color" name="Color" id="colour"/>
+
+      </fieldset>
+    <footer>
+      <button>Enviar</button>
+    </footer>
+</fieldset>
+</form>
+
+</body>
+
+</html>
